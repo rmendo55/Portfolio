@@ -1,0 +1,86 @@
+/* styles for entire body */
+body 
+{
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.navbar > .right-side > div{
+    margin-right: 20px;
+    font-size: 0.9m;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-side
+{
+    font-size: 0.9m;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-side
+{
+    display: flex;
+}
+
+.nav-link-wrapper a
+{
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper 
+{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.active-nav-link
+{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black;
+}
+
+.nav-link-wrapper:hover
+{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover
+{
+    color: black;
+}
+
+
+/* img styles */
+.intro-heading 
+{
+    color: white;
+    position: absolute;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    left: 25%;
+    top: 50%;
+}
+
+.img
+{
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    filter: brightness(60%);
+}

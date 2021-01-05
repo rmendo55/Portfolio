@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="./portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafas Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="left-side">
+                <div>Rafael Mendoza</div>
+            </div>
+            <div class="right-side">
+                <div class="nav-link-wrapper">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="portfolio.html">Portfolio</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="projects">
+                <div class="description-item">
+                    <div class="project-title1">
+                        <h1>Fusion Colors Auto Body Repair <br> Database Desktop Application</h1>
+                    </div>
+                    <div class="description1">
+                        <p>Created a desktop application for Fusion Colors located in Santa Maria, CA to registor incoming parts. User is allowed to update, 
+                            remove, and add or remove images for any car part that is registered in the database. Technology used for this
+                            project were JavaFx and MySQL </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img id="img" src="./images/main_page.png" width="500px" height="300px">
+                </div>
+                <div class="description-item">
+                    <div class="project-title2">
+                        <h1>Job Search</h1>
+                    </div>
+                    <div class="description2">
+                            <p>Job Search is a web application that integrates JavaScript, Vue.js, bootstrap, and Node.js. The
+                                purpose of this project was to enhance my programming skills towards web development. To
+                                be able to work with data that comes from rest API'S. With this application you are able to 
+                                search for any kind of job that exists. After entering that job title a list of related jobs 
+                                is returned indicating what job title was selected from the user. I use express to handle multiple 
+                                different http requests at a specific url. And I use superagent to make get request from the backend and I use
+                                axios to make get requests from the frontend. 
+                            </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img id="img" src="./images/job_search_main.png" width="500px" height="300px">
+                </div>
+                <div class="description-item">
+                    <div class="project-title3">
+                        <h1>Sorting Algorithm Comparisons</h1>
+                    </div>
+                    <div class="description3">
+                        <p>When I took Data Structures and Alogrithms I decided to create a program to help visualize which 
+                            sorting alogrithm is the fastest to sort based on different sets of data. User is able to select the size of the
+                            data. Numbers will represent the data and in my program I use an arraylist and the program populates the
+                            arraylist with random numbers. After this is done, I make six more of copies of the arraylist that was created 
+                            because each arraylist will be sorted from a different sorting algorithm. I implement seven sorting algorithms and
+                            I do this by using the psuedocode of each sorting algorithm. The sorting algorithms used are: merge sort, quick sort
+                            , radix sort, counting sort, insertion sort, selection sort, and bubble sort. I used Instant.now() to time the methods
+                            of each sorting algorithm to get the time it takes for each sorting algorithm to sort the arraylist. I use the time values 
+                            to graph the values. I use Java to complete this project.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img id="img" src="./images/sorting_algo_menu.PNG" width="480px" height="300px">
+                </div>
+                <div class="description-item">
+                    <div class="project-title4">
+                        <h1>Stack Maze Solver</h1>
+                    </div>
+                    <div class="description4">
+                        <p>Stack Maze Solver is a Java program to find a walkable path based on reading a text files composed multiple components.
+                            The first row of the file represents the number of rows and number of columns. The second row indicates where the 
+                            starting point is located. S represents the starting point and E represents the ending point. Lastly, walkable path
+                            is determined by the 0's and 1's. 0 indicating not a walkable path and 1 indicating a walkable. So, I use a stack because
+                            I push to the stack where there is a walkable path and then pop when there is not walkable path. This is done repetitively
+                            when finding the ending point. 
+                         </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img id="img" src="./images/stack_maze_file.png" width="500px" height="300px">
+                </div>
+                <div class="description-item">
+                    <div class="project-title5">
+                        <h1>Monster Hunter</h1>
+                    </div>
+                    <div class="description5">
+                        <p>Developed a JavaFx game to enhance my skills in Java. This game about a warrior trying to defeat an almighty creature.
+                            there are traps, and essentials in the game. As player is moving the program will notify the user if you are near danger
+                            or not. An array is used to implement this game. 
+                        </p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img id="img" src="./images/monster_menu.PNG" width="500px" height="300px">
+                </div>
+                <div class="description-item">
+                    <div class="project-title6">
+                        <h1>Memory Game</h1>
+                    </div>
+                    <div class="description6">
+                        <p>A JavaFx game to help test my programming skills.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img id="img" src="./images/cards_first_page.PNG" width="500px" height="300px">
+                </div>
+        </div>
+    </div>
+</body>
+</html>

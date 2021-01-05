@@ -1,0 +1,178 @@
+/* styles for entire body */
+html 
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    padding: 15px 15px 15px 15px;    
+}
+
+/* Image Styles */
+.gallery > div
+{
+    /* margin-top: 20px;
+    border-radius: 8px;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.3s; */
+}
+
+#img:hover
+{
+    opacity: 0.7;
+}
+
+/* Navbar Styles */
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 30px;
+}
+
+.navbar > .right-side > div{
+    margin-right: 20px;
+    font-size: 0.9m;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.left-side
+{
+    
+    font-size: 0.9m;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-side
+{
+    display: flex;
+}
+
+.nav-link-wrapper a
+{
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper 
+{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.active-nav-link
+{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    color: black;
+}
+
+.nav-link-wrapper:hover
+{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover
+{
+    color: black;
+}
+
+/* project styles */
+.projects
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid black;
+} 
+
+.gallery-item
+{
+    padding: 20px;
+}
+
+.projects > div 
+{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.description1
+{
+    transition: 500ms;
+    color: white;
+}
+
+.description2
+{
+    transition: 500ms;
+    color: white;
+}
+
+.description3
+{
+    transition: 500ms;
+    color: white;
+}
+
+.description4
+{
+    transition: 500ms;
+    color: white;
+}
+
+.description5
+{
+    transition: 500ms;
+    color: white;
+}
+
+.description6
+{
+    transition: 500ms;
+    color: white;
+}
+
+.description1:hover
+{
+    color: black;
+}
+
+.description2:hover
+{
+    color: black;
+}
+
+
+.description3:hover
+{
+    color: black;
+}
+
+
+.description4:hover
+{
+    color: black;
+}
+
+
+.description5:hover
+{
+    color: black;
+}
+
+
+.description6:hover
+{
+    color: black;
+}
