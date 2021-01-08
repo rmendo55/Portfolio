@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="./home.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    <script src="./script.js"></script>
     <title>Rafas Home</title>
 </head>
 <body>
@@ -13,27 +14,29 @@
                 <div>Rafael Mendoza</div>
             </div>
             <div class="right-side">
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="home.html">Home</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="portfolio.html">Portfolio</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="about.html">About</a>
-                </div>
-                <div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <div class="nav-link-wrapper active-nav-link" onclick="location.href='home.html'">
+                        <a href="home.html">Home</a>
+                    </div>
+                    <div class="nav-link-wrapper" onclick="location.href='portfolio.html'">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                    <div class="nav-link-wrapper" onclick="location.href='about.html'">
+                        <a href="about.html">About</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div>
                 <div class="intro-heading">
-                    <h1>Hello my name is Rafael Mendoza and I am a Software Engineer</h1>
+                    <h1>Web Developer</h1>
                 </div>
-                <div class="img">
+                <div class="background-image">
                     <img src="./images/homeImage2.jpg">
                 </div>
         </div>

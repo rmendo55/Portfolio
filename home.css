@@ -9,27 +9,23 @@ body
 /* Navbar Styles */
 .navbar
 {
-    background-color: lightgray;
     display: flex;
     justify-content: space-between;
     padding: 30px;
 }
 
-.navbar > .right-side > div{
+.navbar-links > div{
     margin-right: 20px;
-    font-size: 0.9m;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.left-side
+.left-side > div
 {
-    font-size: 0.9m;
+    font-size: 18px;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.right-side
+.navbar-links
 {
     display: flex;
 }
@@ -39,6 +35,9 @@ body
     text-decoration: none;
     color: #8a8a8a;
     transition: color 0.5s;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-link-wrapper 
@@ -54,7 +53,7 @@ body
 }
 
 .active-nav-link a{
-    color: black;
+    color: red;
 }
 
 .nav-link-wrapper:hover
@@ -64,9 +63,28 @@ body
 
 .nav-link-wrapper a:hover
 {
-    color: black;
+    color: red;
 }
 
+.toggle-button 
+{
+    position: absolute;
+    top: 28px;
+    right: 2rem;
+    display: none;
+    flex-direction: column; 
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar 
+{
+    height: 3px;
+    width: 100%;
+    background-color: red;
+    border-radius: 10px;
+}
 
 /* img styles */
 .intro-heading 
@@ -76,15 +94,66 @@ body
     z-index: 1000;
     margin: 0;
     padding: 0;
-    left: 25%;
-    right: 25%;
+    left: 70%;
     top: 50%;
+    right: 30%;
     bottom: 50%;
 }
 
-.img
+.intro-heading > h1
 {
-    background-position: center;
-    background-size: cover;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-image > img
+{
+    background-size: cover; 
+    background-repeat: no-repeat; 
     filter: brightness(60%);
+    width: 100%;
+    height: auto; 
+}
+
+@media  (max-width: 899px) { 
+    .navbar-links
+    {   
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-links > div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar {
+        flex-direction: column;
+        padding: 0px;
+    }
+    .nav-link-wrapper{
+        border-bottom: none;
+        line-height: 80px;
+        height: 80px;
+    }
+    .active-nav-link {
+        border-bottom: none;
+    }
+    .nav-link-wrapper:hover {
+        width: 100%;
+        border-bottom: none;
+        background-color: #A9A9A9;
+    }
+    .left-side {
+        padding: 30px;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .nav-link-wrapper:hover a {
+        color: red;
+    }
 }
