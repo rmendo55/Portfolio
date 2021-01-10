@@ -9,6 +9,7 @@ body
 /* Navbar Styles */
 .navbar
 {
+    background-color: lightgrey;
     display: flex;
     justify-content: space-between;
     padding: 30px;
@@ -93,16 +94,17 @@ body
     position: absolute;
     z-index: 1000;
     margin: 0;
-    padding: 0;
-    left: 70%;
-    top: 50%;
-    right: 30%;
-    bottom: 50%;
+    padding-top: 19vw;
+    padding-right:0em;
+    padding-bottom:0em;
+    padding-left: 65vw;
 }
 
 .intro-heading > h1
 {
-    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 4vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -156,4 +158,14 @@ body
     .nav-link-wrapper:hover a {
         color: red;
     }
+    /* .intro-heading > h1{
+        /* font-size: 14px; */
+    } */
 }
+
+/* @media  (min-width: 280px) { 
+   
+    .intro-heading > h1{
+        /* font-size: 14px; */
+    }
+} */
