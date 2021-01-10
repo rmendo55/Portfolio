@@ -158,14 +158,5 @@ body
     .nav-link-wrapper:hover a {
         color: red;
     }
-    /* .intro-heading > h1{
-        /* font-size: 14px; */
-    } */
-}
 
-/* @media  (min-width: 280px) { 
-   
-    .intro-heading > h1{
-        /* font-size: 14px; */
-    }
-} */
+}
