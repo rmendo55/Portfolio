@@ -3,5 +3,9 @@ $(document).ready(function() {
     $(".toggle-button").click(() => {
             $("div.navbar-links").toggleClass("active");
     });
+
+    $("img-link").click(() => {
+        $("project-img").toggleClass("active");
+    });
 });
 
