@@ -13,7 +13,8 @@ body
 /* Image Styles */
 img:hover
 {
-    opacity: 0.7;
+    transform: scale(1.1);
+    filter: grayscale(0);
 }
 
 /* Navbar Styles */
@@ -177,6 +178,7 @@ img:hover
 
 img
 {
+    /* filter: grayscale(100%); */
     float: right;
     height: 26vw;
     width: 36vw;
@@ -185,8 +187,9 @@ img
 p
 {
     font-size: 1.2vw;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Geneva;
+    color: Lavender;
     width: 50%;
     padding-top: 5%;
     /* height: 100%; */
@@ -195,15 +198,30 @@ p
 .img-and-description 
 {
     padding-top: 3%;
-    height: 500px;
+    height: 550px;
 }
 
 h1 
 {
     font-size: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    /* font-family: Courier New, Lucida console, Monaco; */
+    font-family: Optima;
+    color: Lavender;
     text-align: center;
 }
 
+.img-gallery1, .img-gallery2, .img-gallery3, .img-gallery4, .img-gallery5, .img-gallery6
+{
+    display: none;
+}
+
+.project-img 
+{
+    filter: grayscale(100%);
+}
+
+.project-img.active 
+{
+    filter: grayscale(0);
+}
 
