@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="./lightboxfiles/lightbox2-2.11.3/dist/css/lightbox.css">
+    <script type="text/javascript" src="./lightboxfiles/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -42,16 +44,19 @@
                     <h1>Fusion Colors Auto Body Repair Database Desktop Application</h1>
                 </div>
                 <div class="img-and-description">
-                    <div class="left">
-                        <img src="./images/main_page.png">
+                    <a class="img-link" href="./images/main_page.png" data-lightbox="project1"><img class="project-img" src="./images/main_page.png"></a>
+                    <div class="img-gallery1">
+                        <a href="./images/ADD_PART.png" data-lightbox="project1"><img class="project-img" src="./images/ADD_PART.png"></a>
+                        <a href="./images/add_confirm.png" data-lightbox="project1"><img class="project-img" src="./images/add_confirm.png"></a>
+                        <a href="./images/database.png" data-lightbox="project1"><img class="project-img" src="./images/database.png"></a>
+                        <a href="./images/MODIFY_PART.png" data-lightbox="project1"><img class="project-img" src="./images/MODIFY_PART.png"></a>
+                        <a href="./images/image.png" data-lightbox="project1"><img class="project-img" src="./images/image.png"></a>
                     </div>
-                    <div class="right"> 
-                        <p>Created a desktop application for Fusion Colors located in Santa Maria, CA to registor incoming
-                            parts. User is allowed to update,
-                            remove, and add or remove images for any car part that is registered in the database. Technology
-                            used for this
-                            project were JavaFx and MySQL </p>
-                    </div>
+                    <p>Created a desktop application for Fusion Colors located in Santa Maria, CA to registor incoming
+                        parts. User is allowed to update,
+                        remove, and add or remove images for any car part that is registered in the database. Technology
+                        used for this
+                        project were JavaFx and MySQL </p>
                 </div>
             </div>
             <div class="project-container">
@@ -59,8 +64,13 @@
                     <h1>Job Search</h1>
                 </div>
                 <div class="img-and-description">
-                    <img src="./images/job_search_main.png">
-                    <p class="job">Job Search is a web application that integrates JavaScript, Vue.js, bootstrap, and Node.js. The
+                    <a class="img-link" href="./images/job_search_main.png" data-lightbox="project2"><img class="project-img" src="./images/job_search_main.png"></a>
+                    <div class="img-gallery2">
+                        <a href="./images/search_again.png" data-lightbox="project2"><img class="project-img" src="./images/search_again.png"></a>
+                        <a href="./images/back_to_main.png" data-lightbox="project2"><img class="project-img" src="./images/back_to_main.png"></a>
+                    </div>
+                    <p class="job">Job Search is a web application that integrates JavaScript, Vue.js, bootstrap, and
+                        Node.js. The
                         purpose of this project was to enhance my programming skills towards web development. To
                         be able to work with data that comes from rest API'S. With this application you are able to
                         search for any kind of job that exists. After entering that job title a list of related jobs
@@ -77,8 +87,12 @@
                     <h1>Sorting Algorithm Comparisons</h1>
                 </div>
                 <div class="img-and-description">
-                    <img src="./images/sorting_algo_menu.PNG">
-                    <p class="sort">When I took Data Structures and Alogrithms I decided to create a program to help visualize which
+                    <a class="img-link" href="./images/sorting_algo_menu.PNG" data-lightbox="project3"><img class="project-img" src="./images/sorting_algo_menu.PNG"></a>
+                    <div class="img-gallery3">
+                        <a href="./images/sort_algo_graph.png" data-lightbox="project3"><img class="project-img" src="./images/sort_algo_graph.png"></a>
+                    </div>
+                    <p class="sort">When I took Data Structures and Alogrithms I decided to create a program to help
+                        visualize which
                         sorting alogrithm is the fastest to sort based on different sets of data. User is able to select
                         the size of the
                         data. Numbers will represent the data and in my program I use an arraylist and the program
@@ -100,15 +114,23 @@
                 <div>
                     <h1>Stack Maze Solver</h1>
                 </div>
-                <div class="img-and-description"> 
-                    <img src="./images/stack_maze_file.png">
-                    <p>Stack Maze Solver is a Java program to find a walkable path based on reading a text files composed of multiple components.
-                        The first row of the file represents the number of rows and number of columns. The second row indicates where the 
-                        starting point is located. S represents the starting point and E represents the ending point. Lastly, walkable path
-                        is determined by the 0's and 1's. 0 indicating not a walkable path and 1 indicating a walkable. So, I use a stack because
-                        I push to the stack where there is a walkable path and then pop when there is not walkable path. This is done repetitively
-                        when finding the ending point. 
-                     </p>
+                <div class="img-and-description">
+                    <a class="img-link" href="./images/stack_maze_file.png" data-lightbox="project4"><img class="project-img" src="./images/stack_maze_file.png"></a>
+                    <div class="img-gallery4">
+                        <a href="./images/maze_path.PNG" data-lightbox="project4"><img class="project-img" src="./images/maze_path.PNG"></a>
+                    </div>
+                    <p>Stack Maze Solver is a Java program to find a walkable path based on reading a text files
+                        composed of multiple components.
+                        The first row of the file represents the number of rows and number of columns. The second row
+                        indicates where the
+                        starting point is located. S represents the starting point and E represents the ending point.
+                        Lastly, walkable path
+                        is determined by the 0's and 1's. 0 indicating not a walkable path and 1 indicating a walkable.
+                        So, I use a stack because
+                        I push to the stack where there is a walkable path and then pop when there is not walkable path.
+                        This is done repetitively
+                        when finding the ending point.
+                    </p>
                 </div>
             </div>
             <div class="project-container">
@@ -116,10 +138,16 @@
                     <h1>Monster Hunter</h1>
                 </div>
                 <div class="img-and-description">
-                    <img src="./images/monster_menu.PNG">
-                    <p>Developed a JavaFx game to enhance my skills in Java. This game about a warrior trying to defeat an almighty creature.
-                        there are traps, and essentials in the game. As player is moving the program will notify the user if you are near danger
-                        or not. An array is used to implement this game. 
+                    <a class="img-link" href="./images/monster_menu.PNG" data-lightbox="project5"><img class="project-img" src="./images/monster_menu.PNG"></a>
+                    <div class="img-gallery5">
+                        <a href="./images/monster_hunter_grid.PNG" data-lightbox="project5"><img class="project-img" src="./images/monster_hunter_grid.PNG"></a>
+                        <a href="./images/monster_hunter_board.PNG" data-lightbox="project5"><img class="project-img" src="./images/monster_hunter_board.PNG"></a>
+                    </div>
+                    <p>Developed a JavaFx game to enhance my skills in Java. This game about a warrior trying to defeat
+                        an almighty creature.
+                        there are traps, and essentials in the game. As player is moving the program will notify the
+                        user if you are near danger
+                        or not. An array is used to implement this game.
                     </p>
                 </div>
             </div>
@@ -128,11 +156,17 @@
                     <h1>Memory Game</h1>
                 </div>
                 <div class="img-and-description">
-                    <img src="./images/cards_first_page.PNG">
+                    <a class="img-link" href="./images/cards_first_page.PNG" data-lightbox="project6"><img class="project-img" src="./images/cards_first_page.PNG"></a>
+                    <div class="img-gallery6">
+                        <a href="./images/memory_game_options.PNG" data-lightbox="project6"><img class="project-img" src="./images/memory_game_options.PNG"></a>
+                        <a href="./images/gameplay_cards.PNG" data-lightbox="project6"><img class="project-img" src="./images/gameplay_cards.PNG"></a>
+                        <a href="./images/a_pair.PNG" data-lightbox="project6"><img class="project-img" src="./images/a_pair.PNG"></a>
+                    </div>
                     <p>A JavaFx game to help test my programming skills.</p>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
