@@ -8,46 +8,37 @@ body
 {
     margin: 0;
     padding: 0;
+    overflow: visible;
 }
 
-/* heading styles */
-.intro-heading 
+/* sticky navbar */
+.navbar 
 {
-    color: white;
-    position: absolute;
-    z-index: 1000;
-    margin: 0;
-    padding-top: 19vw;
-    padding-right:0em;
-    padding-bottom:0em;
-    padding-left: 65vw;
-}
-
-.intro-heading > h1
-{
-    margin: 0;
-    padding: 0;
-    font-size: 4vw;
-    font-family: Arial, Helvetica, sans-serif;
+  position: sticky;
+  top: 0; /* required */
+  z-index: 1;
 }
 
 /* project styles */
 .projects
 {
-    position: absolute;
-    background-color: black;
+    background-color: lightgrey;
 } 
 
-.project-container
+.project-container1, .project-container2, .project-container3, .project-container4, .project-container5, .project-container6
 {
-    padding-top: 3%;
     padding-left: 3%;
     padding-right: 3%;
+    border: 1px solid black;
+}
+
+.project-container1
+{
+    padding-top: 3%;
 }
 
 img
 {
-    /* filter: grayscale(100%); */
     float: right;
     height: 26vw;
     width: 36vw;
@@ -55,13 +46,12 @@ img
 
 p
 {
-    font-size: 1.2vw;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: Geneva;
-    color: Lavender;
+    font-size: 1.3vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
     width: 50%;
-    padding-top: 5%;
-    /* height: 100%; */
+    padding-top: 3%;
+    font-weight: 700;
 }
 
 img:hover
@@ -73,16 +63,16 @@ img:hover
 .img-and-description 
 {
     padding-top: 3%;
-    height: 550px;
+    height: 480px;
 }
 
 h1 
 {
-    font-size: 2vw;
-    /* font-family: Courier New, Lucida console, Monaco; */
-    font-family: Optima;
-    color: Lavender;
+    font-size: 2.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
     text-align: center;
+    font-weight: 700;
 }
 
 .img-gallery1, .img-gallery2, .img-gallery3, .img-gallery4, .img-gallery5, .img-gallery6
@@ -100,3 +90,29 @@ h1
     filter: grayscale(0);
 }
 
+@media (max-width: 1024px) 
+{
+        img
+    {
+        float: none;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 52vw;
+    }    
+    p
+    {
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+        font-size: 2.3vw;
+    }
+    h1
+    {
+        font-size: 3vw;
+    }
+    .img-and-description 
+    {
+        height: 900px;
+    }
+}
