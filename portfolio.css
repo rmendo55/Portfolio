@@ -29,7 +29,6 @@ body
 {
     padding-left: 3%;
     padding-right: 3%;
-    border: 1px solid black;
     height: 35vw;
 }
 
@@ -60,18 +59,6 @@ img:hover
     transform: scale(1.1);
     filter: grayscale(0);
 }
-
-/* .img-and-description1, .img-and-description2, .img-and-description4, .img-and-description5, .img-and-description6 
-{
-    padding-top: 3%;
-    height: 28vw;
-}
-
-.img-and-description3
-{
-    padding-top: 3%;
-    height: 32vw;
-} */
 
 h1 
 {
