@@ -30,6 +30,7 @@ body
     padding-left: 3%;
     padding-right: 3%;
     border: 1px solid black;
+    height: 35vw;
 }
 
 .project-container1
@@ -60,11 +61,17 @@ img:hover
     filter: grayscale(0);
 }
 
-.img-and-description 
+/* .img-and-description1, .img-and-description2, .img-and-description4, .img-and-description5, .img-and-description6 
 {
     padding-top: 3%;
-    height: 480px;
+    height: 28vw;
 }
+
+.img-and-description3
+{
+    padding-top: 3%;
+    height: 32vw;
+} */
 
 h1 
 {
@@ -92,7 +99,7 @@ h1
 
 @media (max-width: 1024px) 
 {
-        img
+    img
     {
         float: none;
         display:block;
@@ -110,9 +117,22 @@ h1
     h1
     {
         font-size: 3vw;
-    }
-    .img-and-description 
+        padding-bottom: 3%;
+    } 
+    .project-container1, .project-container5, .project-container6
     {
-        height: 900px;
+        height: 85vw;
+    }
+    .project-container2
+    {
+        height: 95vw;
+    }
+    .project-container3
+    {
+        height: 110vw;
+    }
+    .project-container4
+    {
+        height: 95vw;
     }
 }
