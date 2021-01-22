@@ -3,7 +3,6 @@ body
 {
         margin: 0;
         padding: 0;
-        overflow: hidden;
 }
 
 /* Navbar Styles */
@@ -13,6 +12,10 @@ body
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; 
+    z-index: 1;
 }
 
 .navbar-links > div{
@@ -24,7 +27,8 @@ body
     color: white;
     font-size: 18px;
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
+    font-weight: 900;
 }
 
 .navbar-links
@@ -39,7 +43,8 @@ body
     transition: color 0.5s;
     font-size: 18px;
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
+    font-weight: 900;
 }
 
 .nav-link-wrapper 
@@ -55,7 +60,7 @@ body
 }
 
 .active-nav-link a{
-    color: red;
+    color: cyan;
 }
 
 .nav-link-wrapper:hover
@@ -65,14 +70,14 @@ body
 
 .nav-link-wrapper a:hover
 {
-    color: red;
+    color: cyan;
 }
 
-.toggle-button 
+#toggle-button 
 {
     position: absolute;
     top: 28px;
-    right: 2rem;
+    right: 5rem;
     display: none;
     flex-direction: column; 
     justify-content: space-between;
@@ -80,57 +85,60 @@ body
     height: 21px;
 }
 
-.toggle-button .bar 
+#toggle-button .bar 
 {
     height: 3px;
     width: 100%;
-    background-color: red;
+    background-color: cyan;
     border-radius: 10px;
 }
 
 /* img styles */
-.intro-heading 
+.intro-section
+{
+    padding-top: 10%;
+    padding-bottom: 30%;
+    padding-left: 40%;
+    display: inline-block;
+}
+
+.intro-section > h1, h3
+{
+    font-family: sans-serif;  
+    font-weight: 900;
+}
+
+.my-name
 {
     color: white;
-    position: absolute;
-    z-index: 1000;
-    margin: 0;
-    padding-top: 19vw;
-    padding-right:0em;
-    padding-bottom:0em;
-    padding-left: 65vw;
-}
-
-.intro-heading > h1
-{
-    margin: 0;
-    padding: 0;
     font-size: 4vw;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.background-image > img
+.intro-text  
 {
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    filter: brightness(60%);
-    width: 100%;
-    height: auto; 
+    color: white;
+    font-size: 3vw;
+}
+
+.home-img
+{
+    background-image: url("./images/homeImage1.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media  (max-width: 899px) { 
     .navbar-links
     {   
+        background-color: black;
         display: none;
         width: 100%;
         flex-direction: column;
         text-align: center;
+        position: absolute; 
     }
-    .navbar-links > div {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .toggle-button {
+    #toggle-button {
         display: flex;
     }
     .navbar {
@@ -139,14 +147,13 @@ body
     }
     .nav-link-wrapper{
         border-bottom: none;
-        line-height: 80px;
-        height: 80px;
+        line-height: 13vh;
+        height: 13vh;
     }
     .active-nav-link {
         border-bottom: none;
     }
     .nav-link-wrapper:hover {
-        width: 100%;
         border-bottom: none;
         background-color: #A9A9A9;
     }
@@ -157,7 +164,8 @@ body
         display: flex;
     }
     .nav-link-wrapper:hover a {
-        color: red;
+        color: cyan;
     }
 
 }
+
