@@ -1,0 +1,54 @@
+.about 
+{
+    background-color: lightgray;
+}
+
+#about-me
+{
+    width: 90%;
+    margin: 0 auto;
+}
+
+li
+{
+    list-style: none;
+}
+
+.first-section, .second-section, .third-section
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo 
+{
+    width: 10vw;
+    height: 20vh;
+    padding: 3%;
+}
+
+#me
+{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.img-of-me, #header
+{   
+    text-align: center;
+}
+
+
+/* .first-section, .second-section, .third-section
+{
+    display: flex;
+    flex-wrap: nowrap;
+} */
+
+/* .first-section > div
+{
+    width: 100%;
+    margin: 10px;
+    text
+} */
