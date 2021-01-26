@@ -7,5 +7,9 @@ $(document).ready(function() {
     $("img-link").click(() => {
         $("project-img").toggleClass("active");
     });
+
+    $(".nav-link-wrapper").click(() => {
+        $("div.navbar-links").toggleClass("active");
+    });
 });
 
