@@ -19,7 +19,7 @@ html
 
 .title
 {
-    padding-top: 3%;
+    padding-top: 10%;
     padding-bottom: 3%;
 }
 
@@ -106,5 +106,10 @@ h1
     .project-container4
     {
         height: 95vw;
+    }
+    .projects
+    {
+        padding-top: 40px;
+        margin-top: -40px;
     }
 }
