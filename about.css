@@ -39,16 +39,10 @@ li
     text-align: center;
 }
 
-
-/* .first-section, .second-section, .third-section
-{
-    display: flex;
-    flex-wrap: nowrap;
-} */
-
-/* .first-section > div
-{
-    width: 100%;
-    margin: 10px;
-    text
-} */
+@media  (max-width: 899px) { 
+    .about 
+    {
+        padding-top: 40px;
+        margin-top: -40px;
+    }
+}
