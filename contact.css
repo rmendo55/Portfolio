@@ -1,0 +1,28 @@
+.phone, .email, .description
+{
+    text-align: center;
+}
+
+.linkedin-img, .github-img, .resume-img
+{
+    height: 65px;
+    width: 75px;
+    border-radius: 2px;
+}
+
+.contact-links 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.github, .linkedin, .resume
+{
+    margin-left: 10px;
+}
+
+.linkedin-img:hover, .github-img:hover, .resume-img:hover
+{
+    transform: scale(1.1);
+    filter: opacity(80%);
+}
