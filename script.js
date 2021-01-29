@@ -9,8 +9,10 @@ $(document).ready(function() {
         $("project-img").toggleClass("active");
     });
 
-    $(".nav-link-wrapper").click(() => {
-        $("div.navbar-links").toggleClass("active");
-    });
+    // When the user clicks on home link, scroll to the top of the document
+    topFunction = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
 });
 
