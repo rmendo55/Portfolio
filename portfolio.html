@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="./portfolio.css">
     <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./contact.css">
     <link rel="stylesheet" href="./lightboxfiles/lightbox2-2.11.3/dist/css/lightbox.css">
     <script type="text/javascript" src="./lightboxfiles/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
     <meta charset="UTF-8">
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <div id="navbar-section" class="navbar">
         <div class="left-side">
             <div>Rafael Mendoza</div>
         </div>
@@ -26,8 +27,8 @@
                 <span class="bar3"></span>
             </a>
             <div class="navbar-links">
-                <div class="nav-link-wrapper active-nav-link" onclick="location.href='#home-section'">
-                    <a href="#home-section">Home</a>
+                <div class="nav-link-wrapper active-nav-link" onclick="topFunction()">
+                    <a href="#" onclick="topFunction()">Home</a>
                 </div>
                 <div class="nav-link-wrapper" onclick="location.href='#project-section'">
                     <a href="#project-section">Portfolio</a>
@@ -35,9 +36,12 @@
                 <div class="nav-link-wrapper" onclick="location.href='#about-section'">
                     <a href="#about-section">About</a>
                 </div>
+                <div class="nav-link-wrapper" onclick="location.href='#contact-section'">
+                    <a href="#contact-section">Contact</a>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
     <div id="home-section" class="home-img">
         <div class="intro-section">
             <h1 class="my-name">Rafael Mendoza</h1>
@@ -234,6 +238,26 @@
             <img class="logo" src="./images/mysql.png">
             <img class="logo" src="./images/postgre.png">
             <img class="logo" src="./images/vue.png">
+        </div>
+    </div>
+
+    <div id="contact-section" class="contact">
+        <div class="title">
+            <h1>Contact</h1>
+        </div>
+        <div class="description">If you're interested in talking to me I'd love for you to reach out!</div>
+        <div class="phone"><h2>Phone: (661) 441-9701 </h2></div>
+        <div class="email"><h2>Email:<a href="#"> mendozarafael914@gmail.com</a></h2></div>
+        <div class="contact-links">
+            <div class="github">
+                <a href="http://www.github.com/rmendo55"><img class="github-img" src="./images/github.jpg"></a>
+            </div>
+            <div class="linkedin">
+                <a href="http://www.linkedin.com/in/mendoza-rafael"><img class="linkedin-img" src="./images/linkedin.png"></a>
+            </div>
+            <div class="resume">
+                <a href="http://www.linkedin.com/in/mendoza-rafael"><img class="resume-img" src="./images/resume.png"></a>
+            </div>
         </div>
     </div>
 </body>
