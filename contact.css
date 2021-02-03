@@ -40,3 +40,10 @@
     float: right;
     color: white;
 }
+
+.description 
+{
+    font-size: 1.3vw;
+    font-family: sans-serif;
+    color: black;
+}
